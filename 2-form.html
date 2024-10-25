@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <title>Form</title>
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-BxV-Wc9V.css">
   </head>
   <body>
-
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -28,9 +25,25 @@
       </div>
     </header>
     
-
-    <main>  
+    <main>
+      <form class="feedback-form" autocomplete="off">
+        <label class="labels">
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <br />
+        <label class="labels">
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
       
     </main>
+
+    <a class="back-link" href="./index.html">Go back</a>
+
   </body>
+  <script src="./js/2-form.js"></script>
 </html>
